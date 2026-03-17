@@ -1,0 +1,226 @@
+/* Reset y Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Azul noche profundo para que resalten las ventanas */
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Contenedor Principal (SOLUCIÓN AL CENTRADO) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Esto centra todo el blog */
+    padding: 40px 20px;
+}
+
+.search-container button {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #7dd3fc;
+    transform: scale(1.05);
+}
+
+/* Estilo de las Ventanas (Cards) */
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+/* Títulos y Texto */
+.hero-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.benefit-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.benefit-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.benefit-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* Layout de Grilla */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.highlights {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 5px solid #38bdf8;
+}
+
+/* Ajuste para Celulares */
+@media (max-width: 900px) {
+    .grid-layout, .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Variables para la página de Contras */
+:root {
+    --warning-orange: #ff8c00;
+    --danger-red: #ff4d4d;
+    --bg-dark-cons: #0f0a0a; /* Un negro con un toque rojizo */
+}
+
+.blog-page-cons {
+    background-color: var(--bg-dark-cons);
+    min-height: 100vh;
+    padding: 40px 0;
+    color: #fff;
+}
+
+/* Título con Gradiente Cálido */
+.main-title-cons {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, var(--warning-orange), var(--danger-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Ventanas con Borde Neón Naranja */
+.glass-card-cons {
+    background: rgba(255, 69, 0, 0.05); /* Muy transparente pero con tono */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+}
+
+.glass-card-cons:hover {
+    transform: translateY(-8px);
+    border-color: var(--warning-orange);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+}
+
+/* Ajustes de la Barra Lateral */
+.sidebar h3 {
+    color: var(--warning-orange);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--danger-red);
+    display: inline-block;
+}
+
+.nav-links {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    color: var(--warning-orange);
+    padding-left: 10px;
+}
+
+.alert-box {
+    background: rgba(255, 77, 77, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 0.9rem;
+    border: 1px dashed var(--danger-red);
+}
+
+/* Grilla de Temas */
+.topic-card h4 {
+    color: var(--danger-red);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.topic-card p {
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .sidebar-layout {
+        grid-template-columns: 1fr;
+    }
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
