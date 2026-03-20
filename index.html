@@ -3,42 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de IA - Inicio</title>
+    <title>IA: Perspectivas y Desafíos - Wilmer & Roger</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="overlay"></div>
 
-    <main class="container">
-        <header class="header">
-            <div class="caja-bienvenido">¡BIENVENIDO!</div>
-        </header>
-
-        <h1 class="titulo-principal">INTELIGENCIA ARTIFICIAL</h1>
-
-        <section class="seccion-info">
-            <p class="descripcion">
-                "La IA es la capacidad de las máquinas para procesar datos, aprender de ellos y tomar decisiones de forma autónoma. No es solo software; es el intento de replicar la lógica humana en sistemas digitales para resolver problemas complejos en milisegundos."
-            </p>
-        </section>
-
-        <div class="footer-left">
-            <a href="#" class="btn-azul btn-grande">VER BLOG</a>
+    <nav class="navbar">
+        <div class="nav-logo">PROYECTO <span>IA</span></div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contras">Riesgos</a>
         </div>
+    </nav>
 
-        <div class="footer-right">
-            <div class="botones-paginas">
-                <a href="#" class="btn-azul btn-sm">PAGINA 1</a>
-                <a href="#" class="btn-azul btn-sm">PAGINA 2</a>
-                <a href="#" class="btn-azul btn-sm">PAGINA 3</a>
+    <section class="hero-section" id="inicio">
+        <div class="container">
+            <div class="header">
+                <div class="caja-bienvenido">¡BIENVENIDO!</div>
             </div>
+            
+            <h1 class="titulo-principal">INTELIGENCIA ARTIFICIAL</h1>
+            
+            <div class="seccion-info">
+                <p class="descripcion">
+                    "La IA es la capacidad de las máquinas para procesar datos, aprender de ellos y tomar decisiones de forma autónoma. No es solo software; es el intento de replicar la lógica humana para resolver problemas complejos."
+                </p>
+            </div>
+            
+            <div class="footer-left">
+                <a href="#beneficios" class="btn-azul">DESCUBRIR MÁS</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador">
+        <p>"La Inteligencia Artificial no reemplazará a los humanos, pero los humanos que usan IA reemplazarán a los que no la usan."</p>
+    </div>
+
+    <section class="seccion-bloque" id="beneficios">
+        <div class="container">
+            <h2 class="subtitulo-seccion">El Impacto Positivo de la IA</h2>
+            <div class="grid-layout">
+                <article class="card card-pro">
+                    <h3>Salud de Precisión</h3>
+                    <p>La IA analiza miles de imágenes médicas en segundos, detectando enfermedades en etapas tempranas que el ojo humano no podría notar.</p>
+                </article>
+                <article class="card card-pro">
+                    <h3>Automatización</h3>
+                    <p>Libera a los humanos de tareas peligrosas, permitiendo que nos enfoquemos en la creatividad y la estrategia global.</p>
+                </article>
+                <article class="card card-pro">
+                    <h3>Sostenibilidad</h3>
+                    <p>Optimiza el consumo de energía en ciudades inteligentes y ayuda a predecir desastres climáticos con exactitud.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador separador-alerta">
+        <p>CON GRAN PODER, VIENE UNA GRAN RESPONSABILIDAD.</p>
+    </div>
+
+    <section class="seccion-bloque" id="contras">
+        <div class="container">
+            <h2 class="subtitulo-seccion text-alerta">El Lado Oscuro: Desafíos y Riesgos</h2>
+            <div class="grid-layout">
+                <article class="card card-riesgo">
+                    <h3>Desplazamiento Laboral</h3>
+                    <p>La rapidez de la automatización amenaza con sustituir millones de empleos antes de que los trabajadores aprendan nuevas habilidades.</p>
+                </article>
+                <article class="card card-riesgo">
+                    <h3>Sesgos Algorítmicos</h3>
+                    <p>Si la IA tiene prejuicios, tomará decisiones discriminatorias en créditos bancarios, contrataciones o justicia legal.</p>
+                </article>
+                <article class="card card-riesgo">
+                    <h3>Privacidad de Datos</h3>
+                    <p>Los modelos requieren información personal para entrenarse, poniendo en riesgo la identidad digital de todos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-final">
+        <div class="container footer-content">
             <div class="caja-participantes">
-                Wilmer Lovera y Roger
+                Wilmer Lovera & Roger Solano &copy; 2026
             </div>
         </div>
-    </main>
+    </footer>
 
 </body>
 </html>
